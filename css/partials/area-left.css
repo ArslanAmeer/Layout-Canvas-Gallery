@@ -1,0 +1,104 @@
+.left-area{
+    background-color: rgba(160, 160, 160,.8);
+    width: 12%;
+    /* height: 100%; */
+    padding: 5%;
+    position: fixed;
+    opacity: .8;
+}
+aside{
+    height: 150vh;
+}
+.nav > header{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto;
+    margin: 50px 10% -20px 10%;
+}
+
+.nav > ul{
+    list-style-type: none;
+    margin: 45% auto;
+    padding: 0;
+}
+
+.nav > ul li{
+    margin: 10%;
+}
+
+.list-link{
+    text-decoration: none;
+    font-size: .8rem;
+    display: block;
+    border: 1px solid rgb(100, 0, 0);
+    background: maroon;
+    color: antiquewhite;
+    text-align: center;
+    padding: 7%;
+    overflow: hidden;  
+    border-radius: 50px;
+    transition: background-color 0.5s ease-out;
+}
+
+.list-link:hover{
+    background-color: rgba(128, 128, 128,.5);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+aside > .copyrights{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-size: x-small;
+}
+
+@media (max-width: 1200px){
+    .nav > header{
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 800px){
+    .nav > header{
+        font-size: 0.8em;
+    }
+
+    .nav > ul{
+        margin-bottom: 5%;
+    }
+
+    .list-link{
+        font-size: 0.5em;
+    }
+    aside > .copyrights{
+        font-size: xx-small;
+    }
+}
+
+/* For GALAXY NOTE 5 */
+@media (max-width: 450px){
+    .left-area{
+        width: 17%;
+        padding: 2%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+    .nav > header{
+        font-size: 0.65em;
+        margin-bottom: 0;
+    }   
+}
+
+@media (max-width: 400px) {
+    .left-area{
+        display: none;
+    }
+}
